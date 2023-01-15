@@ -1,0 +1,62 @@
+// NO ENTENDI COMO HACER UNA FUNCION EN DONDE ME DE RETURN TANTO DE LOS COLORES RGB COMO EL ANCHO EN UNA SOLA FUNCION
+
+// OBJETIVO 3
+// Funcion/Mixin para obtener color RGB
+@function formatoBotonColor($r, $g, $b) {
+    @if ($r < 255) or ($r > 0) {
+        @if ($g < 255) or ($g > 0) {
+            @if ($b < 255) or ($b > 0) {
+                @return #{"rgb(" + #{$r}+", "+#{$g}+", "+#{$b}+");"};
+            }
+
+            @else {
+                @warn "Debe usar un valoresentre 0 y 255!. @osman-az";
+                @return #{"rgb(226, 226, 231);"};
+            }
+        }
+    }
+}
+
+@mixin formatoBotonColor($r, $g, $b) {
+    @if ($r < 255) or ($r > 0) {
+        @if ($g < 255) or ($g > 0) {
+            @if ($b < 255) or ($b > 0) {
+                background-color: rgb($r, $g, $b);
+            }
+            
+            @else {
+                background-color: rgb(226, 226, 231);
+                @warn "Debe usar un valoresentre 0 y 255!. @osman-az";
+            }
+        }
+    }
+}
+
+// Funcion para obtener ancho
+@function formatoBotonAncho($ancho) {
+
+    // OBJETIVO 5
+    @if ($ancho < 20px) {
+        @error "Debe usar un valor MAYOR a 20px!. @osman-az";
+
+        // OBJETIVO 4
+    }
+
+    @else if ($ancho >=25px) {
+        @return #{$ancho*5};
+    }
+}
+
+@mixin formatoBotonAncho($ancho) {
+
+    // OBJETIVO 5
+    @if ($ancho < 20px) {
+        @error "Debe usar un valor MAYOR a 20px!. @osman-az";
+
+        // OBJETIVO 4
+    }
+
+    @else if ($ancho >=25px) {
+        width: ($ancho*5);
+    }
+}

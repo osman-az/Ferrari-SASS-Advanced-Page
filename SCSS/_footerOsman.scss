@@ -1,0 +1,23 @@
+// GENERALES
+* {
+    padding: 0;
+    margin: 0;
+}
+
+// FOOTER
+footer {
+    background-color: #031319;
+    height: 20vh;
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    div {
+        background: #031319 url(../IMG/OSSE-recortado.gif) center center/cover no-repeat;
+        margin-right: 6%;
+        width: 7%;
+        height: 72%;
+    }
+}
