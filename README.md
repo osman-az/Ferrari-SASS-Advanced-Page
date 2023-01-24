@@ -29,3 +29,8 @@ to format a button. A "Placeholder" was made to format a button (Placeholder).
 6. Within this function an *arithmetic operation* is performed that multiplies: *$width * 5*; Then a *conditional structure* in which only if the result of the multiplication is greater than 125px execute the following instruction: *width = $width*; In addition, the *background-color* of the element is adjusted based on the colors that this function requires by parameter.
 
 7. Created another *conditional structure* in which if the result of the multiplication is less than 100 then it emits an error message in the console indicating: *"the value of the width must be greater than 20"*.
+
+### Technologies:
+                    
+| ![HTML 5](https://i.imgur.com/QmbHEsR.png "HTML 5") HTML 5 | ![CSS 3](https://i.imgur.com/O6lJ8iB.png "CSS 3") CSS 3 | ![SASS](https://i.imgur.com/VQyrdlo.png "SASS") SASS
+| ------------- | ------------- | ------------- |
